@@ -1,6 +1,6 @@
 import axios from 'axios';
 export const api = axios.create({
-  baseURL: 'http://13.239.37.185:5000/api',
+  baseURL: 'https://dns-manager.ankurchaurasia.in/api',
   headers: {
     'Content-Type': 'application/json',
   },

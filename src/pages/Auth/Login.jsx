@@ -47,7 +47,7 @@ const Login = () => {
               {!isLogin && (
                 <div className="form-group">
                   <label htmlFor="name">Name</label>
-                  <input type="password" id="name" name="name" ref={name} />
+                  <input type="text" id="name" name="name" ref={name} />
                 </div>
               )}
               <div className="form-group">
