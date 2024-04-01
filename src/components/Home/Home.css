@@ -1,0 +1,131 @@
+.home_container_component {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.home_container_component_header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  gap: 1rem;
+}
+
+.home_container_component_header span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.home_container_component_header button {
+  padding: 0.5rem 1rem;
+  width: 150px;
+  height: 40px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.home_container_component_header button:hover {
+  background-color: #333;
+}
+
+.home_container_component_content {
+}
+
+.home_container_component_content_grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 1rem;
+}
+
+.home_container_component_content_grid_header_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.home_container_component_content_grid_section {
+  background-color: #f5f9fd;
+}
+
+.home_container_component_content_grid_container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_container_component_content_grid_container_item {
+  /* width: 20%; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.home_container_component_content_grid_container_item button {
+  padding: 0.5rem;
+  width: 70px;
+  height: 40px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.home_container_component_content_grid_container_item button:hover {
+  background-color: #333;
+}
+
+.home_container_component_content_grid_container_item button:nth-child(1) {
+  margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .home_container_component_content_grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .home_container_component_header {
+    /* gap: 0.5rem;
+    padding: 0.5rem; */
+  }
+  .home_container_component_content_grid_container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .home_container_component_content_grid_header_item {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .home_container_component_content_grid_container_item {
+    font-size: 0.8rem;
+  }
+
+  .home_container_component_content_grid_container_item button {
+    padding: 0.1rem;
+    width: 30px;
+    height: 25px;
+    font-size: 0.4rem;
+  }
+
+  .home_container_component_content_grid_container_item:nth-child(5) {
+    overflow: unset;
+    text-overflow: unset;
+    padding: 0;
+  }
+}

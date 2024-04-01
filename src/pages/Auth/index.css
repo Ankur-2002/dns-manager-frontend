@@ -1,0 +1,149 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-content {
+  display: flex;
+  flex: 1;
+  height: 100%;
+}
+
+.left-login-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  background-color: #f5f5f5;
+  padding: 1rem;
+}
+
+.right-login-content {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+}
+
+.right-login-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+
+.login-form h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.login-form img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.login-form h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.login-form p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.form-group:nth-child(n + 2) {
+  margin-top: 1rem;
+}
+
+.form-group label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.login-form input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  height: 2.5rem;
+  outline: none;
+  border: 1px solid #ced4da;
+}
+
+.login-form button {
+  padding: 0.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  height: 2.5rem;
+  margin-top: 1rem;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+.registerLink {
+  margin-top: 1rem;
+  text-align: center;
+  color: #007bff;
+  /* display: block; */
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .login-content {
+    /* flex-direction: column; */
+  }
+
+  .left-login-content {
+    /* height: 50%; */
+  }
+
+  .right-login-content {
+    /* height: 50%; */
+    display: none;
+  }
+  .login-form h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* justify-content: center; */
+  }
+
+  .login-form img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
